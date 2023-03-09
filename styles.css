@@ -1,0 +1,206 @@
+nav {
+    margin: 27px auto 0;
+
+    position: relative;
+    width: 477px;
+    height: 50px;
+    background-color: #17105a;
+    border-radius: 8px;
+    font-size: 5px;
+}
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+a:nth-child(1){
+    width: 100px;
+}
+a:nth-child(2){
+    width: 110px;
+}
+a:nth-child(3){
+    width: 100px;
+}
+a:nth-child(4){
+    width: 160px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+    width: 100px;
+    left: 0;
+    background: #2600ff;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(126, 115, 224),
+                0 0 25px #6355e4,
+                0 0 50px #7d74cc,
+                0 0 100px #023f68;
+}
+nav .start-about, a:nth-child(2):hover~.animation{
+    width: 110px;
+    left: 100px;
+    background-color: #e74c3c;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #c70606,
+                0 0 25px #830000,
+                0 0 50px #000000,
+                0 0 100px #ff0101;          
+}
+nav .start-about, a:nth-child(3):hover~.animation{
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #001aff,
+                0 0 25px #000000,
+                0 0 50px #3498db,
+                0 0 100px #3498db;
+}
+nav .start-about, a:nth-child(4):hover~.animation{
+    width: 170px;
+    left: 310px;
+    background-color: #9b59b6;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #9b59b6,
+                0 0 25px #9b59b6,
+                0 0 50px #e100ff,
+                0 0 100px #9b59b6;
+}
+
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: linear-gradient(-45deg, #2600ff, #e74c3c, #3498db, #9b59b6);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+span {
+    color: #2BD6B4;
+}
+
+.ismail {
+    width: auto;
+    top: 500px;
+    z-index: inherit;
+    font-weight: 500px;
+    padding-top: 270px;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 0 0 5px #0c0a81,
+    0 0 25px #0c0a81,
+    0 0 50px #0c0a81,
+    0 0 100px #0c0a81;
+    border-radius: 5px;
+}
+
+.pxteam {
+    top: 550px;
+    z-index: inherit;
+    font-weight: 500px;
+    padding-top: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 0 0 5px #410310,
+    0 0 25px #410310,
+    0 0 50px #5c031e,
+    0 0 100px #f8044d;
+    border-radius: 5px;
+
+}
+.myac {
+    top: 550px;
+    z-index: inherit;
+    font-weight: 500px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 0 0 5px #000000,
+    0 0 25px #ff00ff,
+    0 0 50px #ff0b0b,
+    0 0 100px #ff0b0b;
+    border-radius: 5px;
+
+}
+.time {
+    top: 550px;
+    z-index: inherit;
+    font-weight: 500px;
+    padding-top: 14px;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 0 0 5px #eba40c,
+    0 0 25px #003350,
+    0 0 50px #008cff,
+    0 0 100px #008cff;
+    border-radius: 5px;
+}
+
+
+.footer {
+    padding: 12px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 5px #ffffff,
+    0 0 25px #ffffff,
+    0 0 50px #ffffff,
+    0 0 100px #ffffff;
+    border-radius: 5px;
+
+}   
